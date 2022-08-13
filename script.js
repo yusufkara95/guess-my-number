@@ -10,8 +10,12 @@ document.querySelector('.check').addEventListener
     console.log(guess, typeof guess);
 
     if (!guess) {
-        document.querySelector('.message').textContent = 'No Number';
+        document.querySelector('.message').textContent = 'Keine Nummer eingegeben!';
     } else if (guess === secretNumber) {
-        document.querySelector('.message').textContent = 'Correct Number!';
+        document.querySelector('.message').textContent = 'Korrekte Zahl!';
+    } else if (guess > secretNumber) {
+        document.querySelector('.message').textContent = 'Zu hoch!';
+    } else if (guess < secretNumber) {
+        document.querySelector('.message').textContent = 'Zu niedrig!';
     }
 });
