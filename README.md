@@ -6,7 +6,6 @@
 
 - [**Quick start**](#-quick-start)
 - [Built With](#%EF%B8%8F-built-with)
-- [Connect with me](#%EF%B8%8F-connect-with-me)
 
 ## 🚀 Quick start
 
@@ -34,7 +33,3 @@
 
 - [Vanilla JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) - is a name to refer to the use of simple JavaScript without additional libraries.
 
-## ☎️ Connect with me
-
-- Twitter - [@OscarJan18](https://twitter.com/OscarJan18 'My Twitter Account')
-- Linkedin - [Oscar González Jané](linkedin.com/in/oscar-gonzález-frontend-dev 'My Linkedin Account')
