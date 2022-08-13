@@ -25,22 +25,10 @@ document.querySelector('.check').addEventListener
             highscore = score;
             document.querySelector('.highscore').textContent = highscore;
         }
-
-        // Wenn die Zahl höher als die geheime Zahl ist
-    } else if (guess > secretNumber) {
+    // When guess number is wrong
+    } else if (guess !== secretNumber) {
         if (score > 1) {
-            document.querySelector('.message').textContent = 'Zu hoch!';
-            score--;
-            document.querySelector('.score').textContent = score;
-        } else {
-            document.querySelector('.message').textContent = 'Du hast das Spiel verloren!';
-            document.querySelector('.score').textContent = 0;
-        }
-
-        // Wenn die Zahl neidriger als die geheime Zahl ist
-    } else if (guess < secretNumber) {
-        if (score > 1) {
-            document.querySelector('.message').textContent = 'Zu niedrig!';
+            document.querySelector('.message').textContent = guess > secretNumber ? 'Zu hoch!' : 'Zu niedrig!';
             score--;
             document.querySelector('.score').textContent = score;
         } else {
