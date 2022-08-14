@@ -42,6 +42,8 @@ document.querySelector('.check').addEventListener
         } else {
             displayMessage('Du hast das Spiel verloren!');
             document.querySelector('.score').textContent = 0;
+            document.querySelector('body').style.backgroundColor = '#D2042D';
+
         }
     }
 });

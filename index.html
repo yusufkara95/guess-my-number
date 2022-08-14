@@ -8,25 +8,26 @@
     <title>Guess My Number!</title>
   </head>
   <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
+    <div class="container">
+        <h1>Guess My Number!</h1>
+        <p class="info">The game consists of trying to guess the hidden number between 1 and 20 in the fewest possible attempts. To achieve this, it consists of 20 attempts, the less we spend, the higher our final score. You can always try again. Good luck!</p>
+
+        <div class="number">?</div>
         <p class="message">Start guessing...</p>
+
         <p class="label-score">💯 Score: <span class="score">20</span></p>
         <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
+            🥇 Highscore: <span class="highscore">0</span>
         </p>
-      </section>
-    </main>
+
+        <input type="number" class="guess" />
+
+        <div class="btn-row">
+          <button class="btn check">Check!</button>
+          <button class="btn again">New Game</button>
+        </div>
+      
+      </div>
     <script src="script.js"></script>
   </body>
 </html>
